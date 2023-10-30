@@ -1,0 +1,41 @@
+.first-logo-div {
+  text-align: left; /*centers the text content within the element. In mobile and tablet views */
+}
+
+.facebook-logo {
+  color: #1877f2;
+  font-size: 3.7rem; /* defines the font size*/
+  letter-spacing: -3px; /*pulling the letters closer together */
+}
+
+.logo-slogan {
+  font-size: 1.5rem;
+  font-weight: lighter; /* text lighter in terms of font weight*/
+  margin: 20px 0;
+  text-align: left; /* spacing above and below the slogan*/
+}
+
+.main-wrapper {
+  /*for mobile view */
+  width: 400px;
+  height: 680px;
+  margin: auto; /* If left is omitted, it is the same as right. If bottom is omitted it is the same as top, if right is omitted it is the same as top.  */
+  margin-top: 40px; /*margin top of the facebook logo */
+  display: flex;
+  flex-direction: column;
+}
+
+/* For tablet and mobile vieww*/
+@media (min-width: 800px) {
+  .main-wrapper {
+    width: 90%; /* main wrapper 90% of the parent container's width */
+    max-width: 980px; /* maximum width for the main wrapper*/
+    flex-direction: row; /* arrangement of child elements to a row */
+    padding-top: 70px; /* spacing above the content*/
+  }
+  .first-logo-div {
+    text-align: left;
+    padding-top: 80px;
+    width: 400px;
+  }
+}

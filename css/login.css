@@ -1,0 +1,73 @@
+.login-form {
+  background-color: white;
+  width: 400px; /* width of 400px, which provides a centered and constrained login*/
+  padding: 15px;
+  margin: 20px 0;
+  border-radius: 6px;
+  box-shadow: 0 3px 5px 2px rgba(150, 150, 150, 0.2);
+  text-align: center;
+}
+
+input {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 15px;
+  border: 1px solid #d2d2d2;
+  border-radius: 6px;
+}
+
+input::placeholder {
+  font-size: 1rem;
+}
+
+input:focus {
+  outline: 1px solid #1877f2;
+}
+
+input:focus::placeholder {
+  color: #c2c2c2;
+}
+
+/* color change when hovered*/
+.log-in-button {
+  background-color: #1877f2;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bolder;
+  padding: 10px;
+  transition-property: background-color;
+  transition-duration: 100ms;
+  transition-timing-function: ease-in-out;
+}
+
+.log-in-button:hover {
+  cursor: pointer;
+  background-color: darkblue;
+}
+
+.forgot {
+  /* legible font size and a color that stands out, making it easy to spot and tap on small screens*/
+  font-size: 0.9rem;
+  color: blue;
+}
+
+hr {
+  margin: 18px 0;
+  opacity: 0.3;
+}
+.register-button {
+  background-color: green;
+  display: inline-block;
+  color: white;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 6px;
+  font-weight: bolder;
+  transition-property: background-color;
+  transition-duration: 100ms;
+  transition-timing-function: ease-in-out;
+}
+.register-button:hover {
+  text-decoration: none;
+  background-color: darkgreen;
+}

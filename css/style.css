@@ -1,0 +1,58 @@
+:root {
+  /* <html> element for global css variables*/
+  --bg: #f0f2f5;
+}
+
+/* universal selector (*)  matches every element in html doc*/
+* {
+  margin: 0; /* removes any margin space around elements*/
+  padding: 0; /* controls the space inside an element*/
+  box-sizing: border-box; /* how the total width and height of an element are calculated */
+}
+
+body {
+  height: 100vh; /* element to 100% of the viewport height, ensuring it covers the entire screen */
+  overflow: hidden;
+  background-color: var(--bg);
+  font-family: Helvetica, sans-serif;
+}
+a {
+  /*  to link to other web pages, resources, or locations within the same page */
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline; /* underlines anchor links when hovered */
+  cursor: pointer; /*  changes the cursor to a pointer, indicating a clickable link when hovering */
+}
+
+.button-link {
+  display: flex; /* makes the element a flex container */
+  justify-content: center;
+  gap: 5px;
+  font-size: 0.9rem;
+}
+
+.bottom-text-create {
+  color: black;
+  font-weight: bold;
+}
+footer {
+  height: 100%;
+  background-color: white;
+  padding: 25px 35px;
+}
+
+ul {
+  max-width: 1000px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  font-size: 0.75rem;
+  color: #7e7e7e;
+  line-height: 1.5;
+}
+
+li {
+  margin-right: 15px;
+}
